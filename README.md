@@ -17,4 +17,6 @@ Angular/server
 Angular/structural-directives
 Angular/tdf
 
+tkinter - python GUI
+
 
