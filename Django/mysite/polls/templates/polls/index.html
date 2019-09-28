@@ -1,0 +1,13 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/styles.css' %}" >
+{% if latest_questions %}
+<ul>
+{% for question in latest_questions %}
+<li>
+<a href="{% url 'polls:detail' question.id %}">{{question.question_text}}</a>
+</li>
+{% endfor %}
+</ul>
+{% else %}
+<h2>No Questions exists</h2>
+{% endif %}
