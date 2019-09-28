@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div>
+  <select>
+    <option *ngFor="let hero of heroes" [value]="hero.id">{{hero.name | heroFilter:hero.id}} </option>
+  </select>
+</div>
+<!--<div class="app-test"></div>-->
+<!--<div app-test></div>-->
+<app-test></app-test>
+<router-outlet></router-outlet>

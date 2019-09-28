@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1 appStyleColor [color]="'blue'" [bg]="'red'">
+    Welcome to {{ title }}!
+  </h1>
+  <h2>{{fromChild}}</h2>
+  <!--<app-test (childEvent)="fromChild=$event" [parentData]="childData"></app-test>-->
+  <app-employee-list></app-employee-list>
+  <app-employee-detail></app-employee-detail>
+</div>
+<router-outlet></router-outlet>
